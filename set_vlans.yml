@@ -1,0 +1,7 @@
+- name: set_vlans
+  hosts: switches
+  roles:
+    - Juniper.junos
+    - set_vlans
+  connection: local
+  gather_facts: no

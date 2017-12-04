@@ -1,0 +1,10 @@
+- name: set example config
+  junos_config:
+    lines:
+      - set interfaces xe-0/0/2 description test_interface
+      - set vlans vlan10 vlan-id 10
+      - set vlans vlan20 vlan-id 20
+      - set interfaces xe-0/0/2 unit 0 family ethernet-switching interface-mode trunk
+      - set interfaces xe-0/0/2 unit 0 family ethernet-switching vlan members 10
+      - set interfaces xe-0/0/2 unit 0 family ethernet-switching vlan members 20
+    comment: "update by ansible"
