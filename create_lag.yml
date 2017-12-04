@@ -1,0 +1,7 @@
+- name: create lag
+  hosts: switches
+  roles:
+    - Juniper.junos
+    - create_lag
+  connection: local
+  gather_facts: no
