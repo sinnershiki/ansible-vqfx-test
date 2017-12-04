@@ -1,0 +1,18 @@
+- name: show version
+  junos_command:
+    commands: show version
+  register: version_result
+
+- name: debug show version
+  debug:
+    var: version_result.stdout_lines
+
+- name: show configuration | display set
+  junos_command:
+    commands: show configuration
+    display: set
+  register: configuration_result
+
+- name: debug show configuration
+  debug:
+    var: configuration_result.stdout_lines

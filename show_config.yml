@@ -1,0 +1,7 @@
+- name: show_config
+  hosts: all
+  roles:
+    - Juniper.junos
+    - show_config
+  connection: local
+  gather_facts: no

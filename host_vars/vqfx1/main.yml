@@ -1,0 +1,5 @@
+ae10_opposing_device: "vqfx2"
+netconf:
+  host: "{{ inventory_hostname }}"
+  username: "vagrant"
+  port: 2222
