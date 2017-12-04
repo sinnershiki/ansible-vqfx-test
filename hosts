@@ -1,0 +1,6 @@
+vqfx1 ansible_host=127.0.0.1 ansible_port=2200 ansible_user='vagrant' ansible_ssh_private_key_file='/Users/sugano-kosuke/.vagrant.d/insecure_private_key'
+vqfx2 ansible_host=127.0.0.1 ansible_port=2202 ansible_user='vagrant' ansible_ssh_private_key_file='/Users/sugano-kosuke/.vagrant.d/insecure_private_key'
+
+[switches]
+vqfx1
+vqfx2
